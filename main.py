@@ -79,7 +79,7 @@ def delete_all_rules(rules):
 def set_rules(delete):
     # You can adjust the rules if needed
     sample_rules = [
-        {"value": "from:elonmusk"}
+        {"value": "from:elonmusk -is:quote -is:reply -is:retweet"}
     ]
     payload = {"add": sample_rules}
     response = requests.post(
